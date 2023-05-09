@@ -1,0 +1,46 @@
+-
+    let clientPosts = {
+        caseOne: {
+            src:"img/case1",
+            alt:"Client Case Studies Hopshop Fintech B2T Payments",
+            name: "Hopshop",
+            description: "B2T Payments",
+            employeeName: "(Fintech)"
+        },
+        caseTwo: {
+            src:"img/case2",
+            alt:"Client Case Studies Umbrella Fintech Global Talent Marketplace",
+            name: "Umbrella",
+            description: "Global Talent Marketplace",
+            employeeName: "(Tech)"
+        },
+        caseThree: {
+            src:"img/case3",
+            alt:"Client Case Studies Helloboy Podcast Platform",
+            name: "Helloboy",
+            description: "Podcast Platform",
+            employeeName: "(Media)"
+        },
+        caseFour: {
+            src:"img/case4",
+            alt:"Client Case Studies Aboba Small Business AI",
+            name: "Aboba",
+            description: "Small Business AI",
+            employeeName: "(Tech)"
+        }
+    }
+
+mixin clientPost (item)
+    figure.client-post
+        figcaption
+            .client-case-img
+                //- picture 
+                    //- source(srcset=item.src + ".webp", tipe="image/webp")
+                img(src=item.src + ".jpg", alt=item.alt)
+            .description-card.flex
+                .descr-case
+                    p.case-name #{item.name}
+                    p.case-desc #{item.description}
+                .case-category 
+                    p.case-categoty-name #{item.employeeName}
+

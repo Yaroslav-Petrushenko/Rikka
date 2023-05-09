@@ -1,0 +1,58 @@
+@import components/mixin
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap')
+
+// Використання міксіну для всіх елементів:
+* 
+  @include reset-margin-padding
+
+
+
+a 
+  text-decoration: none
+  display: inline-block
+
+
+ul 
+  list-style: none
+
+h1,
+h2,
+h3,
+p,
+a
+  margin: 0
+  font-family: 'Inter'
+  font-weight: 500
+  font-style: normal
+
+
+html 
+  font-family: 'Inter'
+  font-weight: 500
+  font-style: normal
+  font-size: 1px
+
+
+body 
+  margin: 0
+  padding: 0
+  background-color: #F2F2F2
+
+
+.flex 
+  display: flex
+
+
+.wrapper 
+  max-width: 1700px
+  margin: 0 auto
+
+
+
+
+.overflowX-hidden
+    overflow-x: hidden
+
+@import components/header
+@import components/main
+@import components/footer
